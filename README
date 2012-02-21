@@ -1,0 +1,12 @@
+This class gives possibility to use power of Yii ActiveRecord without describing new model classes.
+It can be useful when you work with dynamically generated tables in database, 
+or when you don't want to create a lot of code to do some simple operations using convenient ActiveRecord interface.
+ 
+ Usage>:
+ <code>
+ <?php
+   Yii::import('ext.components.SmartActiveRecord.SmartAR');
+	$model = SmartAR::model('tbl_MyTable')->findByAttributes('id'=>2);
+ 	$model->somefield = someValue;
+ 	$model->save(); 	
+ ?>
