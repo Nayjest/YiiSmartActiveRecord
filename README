@@ -2,7 +2,7 @@ This class gives possibility to use power of Yii ActiveRecord without describing
 It can be useful when you work with dynamically generated tables in database, 
 or when you don't want to create a lot of code to do some simple operations using convenient ActiveRecord interface.
  
- Usage>:
+ Usage:
  <code>
  <?php
    Yii::import('ext.components.SmartActiveRecord.SmartAR');
